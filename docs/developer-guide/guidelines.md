@@ -1,1 +1,1 @@
-X
+The Coding Style & General Guidelines for the Phoenix project can be found out at, https://doc.owncloud.com/server/10.0/developer_manual/general/codingguidelines.html
