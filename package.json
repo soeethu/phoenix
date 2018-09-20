@@ -7,6 +7,7 @@
   "main": "core/core.bundle.js",
   "scripts": {
     "watch": "webpack --progress --colors --watch --mode development --config webpack.dev.js",
+    "compile-uikit": "node_modules/less/bin/lessc src/themes/owncloud.less core/css/uikit.owncloud.css --relative-urls",
     "build": "webpack -p --config webpack.prod.js",
     "lint": "eslint src/**/*.vue src/**/*.js --color --global requirejs --global require",
     "acceptance-tests": "cucumber-js --require-module babel-core/register --require tests/acceptance/setup-local.js --require tests/acceptance/stepDefinitions --format node_modules/cucumber-pretty tests/acceptance/features",
