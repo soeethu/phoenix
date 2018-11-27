@@ -1,18 +1,9 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-const WebpackCopyPlugin = require('webpack-copy-plugin')
-
-var copy_config = [
-	{
-		from: './static/fonts/oc/font/*',
-		to: './core/fonts'
-	}
-]
 
 module.exports = {
 	plugins: [
-		new WebpackCopyPlugin(copy_config),
 		new VueLoaderPlugin(),
 		new MiniCssExtractPlugin({
 				// Options similar to the same options in webpackOptions.output
